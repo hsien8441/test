@@ -136,12 +136,17 @@
     </div>
   </section> -->
   <!-- End Hero -->
-  <div class="embed-responsive embed-responsive-16by9">
+  <!-- <div class="embed-responsive embed-responsive-16by9">
     <video loop="true" autoplay="true" muted style = "display: block;margin: 0 auto;"> 
     <source src="assets/img/demo.mp4" type="video/mp4">
     Your browser does not support the video tag.
     </video>
-  </div>
+  </div> -->
+
+  <!-- <iframe width="2544" height="1128" src="https://www.youtube.com/embed/9uOlNZVdvio?rel=0&autoplay=1&controls=0&mute=1&loop=1&iv_load_policy=3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+
+  <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+  <div id="player"></div>
 
   <main id="main">
 
@@ -494,7 +499,6 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
                 <!-- Messenger 洽談外掛程式 Code -->
 		<div id="fb-root"></div>
 		  <script>
@@ -519,6 +523,59 @@
 			attribution="page_inbox"
 			page_id="1772812179628195">
 		  </div>
+
+      <script>
+        // 2. This code loads the IFrame Player API code asynchronously.
+        var tag = document.createElement('script');
+  
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  
+        // 3. This function creates an <iframe> (and YouTube player)
+        //    after the API code downloads.
+        var player;
+        function onYouTubeIframeAPIReady() {
+          player = new YT.Player('player', {
+            height: '1228',
+            width: '2544',
+            videoId: '9uOlNZVdvio',
+            events: {
+              'onReady': onPlayerReady,
+              'onStateChange': onPlayerStateChange
+            },
+            playerVars: {
+              controls: 0,            // 顯示播放器
+              showinfo: 0,            // 隱藏影片標題
+              modestbranding: 0,      // 隱藏YouTube Logo
+              loop: 1,                // 重覆播放
+              playlist:'9uOlNZVdvio',
+              playbackRate:1.5,
+              iv_load_policy: 3,
+            }
+          });
+        }
+  
+        // 4. The API will call this function when the video player is ready.
+        function onPlayerReady(event) {
+          event.target.mute().playVideo();
+        }
+  
+        // 5. The API calls this function when the player's state changes.
+        //    The function indicates that when playing a video (state=1),
+        //    the player should play for six seconds and then stop.
+        var done = false;
+        function onPlayerStateChange(event) {
+          if (event.data == YT.PlayerState.PLAYING && !done) {
+            // setTimeout(stopVideo, 6000);
+            // done = true;
+          }
+        }
+        function stopVideo() {
+          player.stopVideo();
+        }
+      </script>
+      <style>iframe{width: 99vw; height: 99vh;pointer-events: none; }</style>
 
 </body>
 
