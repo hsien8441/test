@@ -34,6 +34,23 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+<style>
+
+body{font-family:微軟正黑體!important;}
+
+  @media screen and (min-width: 769px) {
+     .changeSize{
+        font-size:3em;
+    } 
+}
+  @media screen and (max-width: 768px) {
+    .changeSize{
+        font-size:1em;
+    } 
+}
+
+</style>
+  
 </head>
 
 <body>
@@ -146,8 +163,13 @@
   <!-- <iframe width="2544" height="1128" src="https://www.youtube.com/embed/9uOlNZVdvio?rel=0&autoplay=1&controls=0&mute=1&loop=1&iv_load_policy=3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
   <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
-  <div id="player"></div>
-
+  <div style = "position: relative;">
+  <div id="player" style = "filter: brightness(50%);"></div>
+  <div style = "position: absolute;left : 4rem;z-index:10000;bottom:1rem" media="only screen and (min-width: 769px)" ><p style = "color:white;font-weight:bold;" class = "changeSize">精密塑膠代工廠-<br>立名鋼模有限公司<br>LIMING-MOLD</p>
+  <a href="contact.html" class="getstarted" style="padding: 8px 25px;;border-radius: 4px;font-weight: 400;color: #fff;background: red;font-size: 1.5rem;">聯絡我們</a>
+  </div>
+  </div>
+	
   <main id="main">
 
     <!-- ======= About Section ======= -->
@@ -160,7 +182,7 @@
             <h3 style="margin-top: 30px;">我們有最專業的工程師團隊，加上超過20年的生產製造經驗， 知道您對塑膠產品的需求以及痛點;<br>此外，乾淨整潔的廠房以及嚴格把關的品質，更是我們製造出好的產品的重要基礎，這就是為甚麼您應該選擇立名成為您的好夥伴。</h3>
 			 <br>
 			 <br>
-			 <a href="index.html" class="getstarted" style="padding: 8px 25px;;border-radius: 4px;font-weight: 400;color: #fff;background: #000000;font-size: 1.5rem;">了解更多</a>
+			 <a href="about.html" class="getstarted" style="padding: 8px 25px;;border-radius: 4px;font-weight: 400;color: #fff;background: #000000;font-size: 1.5rem;">了解更多</a>
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0">
             <h2>
@@ -224,7 +246,7 @@
 		 <div class="col-md-1 mt-4 mt-md-0">
 		 </div>
           <div class="col-md-5 mt-4 mt-md-0">
-           <div class="icon-box" style = "background-image: url('assets/img/S__172195845.jpg');background-size: cover;position: relative;height: 300px;">
+           <div class="icon-box" style = "background-image: url('assets/img/S__172195845.jpg');background-size: cover;position: relative;height: 300px;" onMouseOver ="changeView(this)" onMouseOut = "returnView(this)">
               <i class="bi bi-briefcase" style ="position:absolute;top: 50%;transform: translateY(-50%);"></i>
               <h4><a href="#" style="color: white;font-weight: bold;font-size: larger;position:absolute;top: 30%;transform: translateY(-30%);">專業的分析報告:</a></h4>
               <p style="color: white;font-weight: bold;font-size: initial;position:absolute;top: 60%;transform: translateY(-60%);">專業的工程師團隊會再開模前替您分析完此產品在生產製造中所可能碰到的各種問題，並在發生前就將其排除，替您省下不必要的時間與費用。</p>
@@ -272,7 +294,6 @@
             <!-- </div> -->
           <!-- </div> -->
         </div>
-
       </div>
     </section><!-- End Services Section -->
 
@@ -296,13 +317,9 @@
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info" style = "justify-content: center;">
+              <div class="portfolio-info" style = "justify-content: center;" onclick="location.href='portfolio-details.html'">
                 <h4>測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試</h4>
                 <p>測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
               </div>
             </div>
           </div>
@@ -431,14 +448,16 @@
     <div class="footer-top">
       <div class="container">
         <div class="row">
-
+		<div class="col-lg-1 col-md-6">
+		</div>
           <div class="col-lg-3 col-md-6">
             <div class="footer-info">
               <h3>LiMing</h3>
               <p>
-                台北市台北市台北市<br><br>
-                <strong>Phone:</strong> 0987654321<br>
-                <strong>Email:</strong> info@example.com<br>
+                新北市五股區御成路151號<br><br>
+                <strong>Phone:</strong> (02)2292-3026<br>
+				<strong>FAX:</strong> (02)2292-3945<br>
+                <strong>Email:</strong> alex@liming-mold.com<br>
               </p>
               <div class="social-links mt-3">
                 <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
@@ -449,19 +468,35 @@
               </div>
             </div>
           </div>
-
+		 <div class="col-lg-1 col-md-6">
+		</div>
+		  <div class="col-lg-2 col-md-6 footer-newsletter">
+            <img src="assets/img/ISO13485.png" class="img-fluid" alt="" style = "display:block;margin: auto;">
+          </div>
+		<div class="col-lg-1 col-md-6">
+		</div>
           <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
+            <h4>連結</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">首頁</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">關於立名</a></li>
+			  <li><i class="bx bx-chevron-right"></i> <a href="#">立名CSR</a></li>
             </ul>
           </div>
+		  
+		<div class="col-lg-1 col-md-6 footer-links">
+            <h4>&nbsp;</h4>
+            <ul>
+			  <li><i class="bx bx-chevron-right"></i> <a href="#">服務項目</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">工作環境</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">產品介紹</a></li>
+			  <li><i class="bx bx-chevron-right"></i> <a href="#">聯絡我們</a></li>
+            </ul>
+         </div>
+		 <div class="col-lg-1 col-md-6">
+		</div>
 
-          <div class="col-lg-3 col-md-6 footer-links">
+ <!--          <div class="col-lg-2 col-md-6 footer-links">
             <h4>Our Services</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
@@ -470,16 +505,7 @@
               <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
             </ul>
-          </div>
-
-          <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-
-          </div>
+          </div> -->
 
         </div>
       </div>
@@ -590,6 +616,14 @@
         }
       </script>
       <style>iframe{width: 99vw; height: 99vh;pointer-events: none; }</style>
+	  <script>
+	  function changeView(data){
+	  console.log("123");
+	  }
+	  function returnView(data){
+	  console.log("456");
+	  }
+	  </script>
 
 </body>
 
