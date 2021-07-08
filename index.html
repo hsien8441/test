@@ -51,6 +51,7 @@ body{font-family:微軟正黑體!important;}
 
 </style>
   
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 
 <body>
@@ -67,7 +68,7 @@ body{font-family:微軟正黑體!important;}
         <ul>
           <li><a href="index.html" class="active">首頁</a></li>
 
-          <li class="dropdown"><a href="#"><span>關於立名</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="about.html"><span>關於立名</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="about.html">關於立名</a></li>
               <li><a href="csr.html">立名CSR</a></li>
@@ -246,7 +247,7 @@ body{font-family:微軟正黑體!important;}
 		 <div class="col-md-1 mt-4 mt-md-0">
 		 </div>
           <div class="col-md-5 mt-4 mt-md-0">
-           <div class="icon-box" style = "background-image: url('assets/img/S__172195845.jpg');background-size: cover;position: relative;height: 300px;" onMouseOver ="changeView(this)" onMouseOut = "returnView(this)">
+           <div class="icon-box" style = "background-image: url('assets/img/S__172195845.jpg');background-size: cover;position: relative;height: 300px;">
               <i class="bi bi-briefcase" style ="position:absolute;top: 50%;transform: translateY(-50%);"></i>
               <h4><a href="#" style="color: white;font-weight: bold;font-size: larger;position:absolute;top: 30%;transform: translateY(-30%);">專業的分析報告:</a></h4>
               <p style="color: white;font-weight: bold;font-size: initial;position:absolute;top: 60%;transform: translateY(-60%);">專業的工程師團隊會再開模前替您分析完此產品在生產製造中所可能碰到的各種問題，並在發生前就將其排除，替您省下不必要的時間與費用。</p>
@@ -295,7 +296,93 @@ body{font-family:微軟正黑體!important;}
           <!-- </div> -->
         </div>
       </div>
-    </section><!-- End Services Section -->
+    </section>
+	<!-- End Services Section -->
+	
+	<section id="portfolio" class="portfolio">
+      <div class="container">
+	  <div class="row " style = "--bs-gutter-x: 0.5rem;">
+
+		 <div class="col-md-1 mt-4 mt-md-0">
+		 </div>
+
+          <div class="col-md-5 mt-4 mt-md-0 portfolio-item" onMouseOver ="changeView(1)" onMouseOut = "returnView(1)">
+            <div class="portfolio-wrap">
+              <img src="assets/img/S__172195845.jpg" class="img-fluid" alt="">
+			  <div class="icon-box">
+              <i class="bi bi-briefcase" style ="position:absolute;top: 50%;transform: translateY(-50%);float: left;color: #d9232d;font-size: 40px;left:5%" id = "itag_1"></i>
+			  <div style ="width: 100%;text-align: center;" id = "divtag_1">
+			  <h4 style="color: white;font-weight: bold;font-size: 200%;position:absolute;top: 50%;transform: translateY(-50%);left: 30%;">專業的分析報告:</h4>
+			  </div>
+			  </div>
+			  </img>
+              <div class="portfolio-info" onclick="location.href='portfolio-details.html'">
+                <h4 style = "margin: auto;font-size: 200%;">專業的分析報告:<p style = "font-size: 60%;">專業的工程師團隊會再開模前替您分析完此產品在生產製造中所可能碰到的各種問題，並在發生前就將其排除，替您省下不必要的時間與費用。</p></h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-5 mt-4 mt-md-0 portfolio-item" onMouseOver ="changeView(2)" onMouseOut = "returnView(2)">
+            <div class="portfolio-wrap">
+              <img src="assets/img/S__172195845.jpg" class="img-fluid" alt="">
+			  <div class="icon-box">
+              <i class="bi bi-card-checklist" style ="position:absolute;top: 50%;transform: translateY(-50%);float: left;color: #d9232d;font-size: 40px;left:5%" id = "itag_2"></i>
+			  <div style ="width: 100%;text-align: center;" id = "divtag_2">
+			  <h4 style="color: white;font-weight: bold;font-size: 200%;position:absolute;top: 50%;transform: translateY(-50%);left: 30%;">明亮整潔的廠房:</h4>
+			  </div>
+			  </div>
+			  </img>
+              <div class="portfolio-info" onclick="location.href='portfolio-details.html'">
+                <h4 style = "margin: auto;font-size: 200%;">明亮整潔的廠房:<p style = "font-size: 60%;">乾淨、明亮的廠房，高達XXX坪的無塵室生產環境，十分適合精密、潔淨度要求高的醫療產品。</p></h4>
+              </div>
+            </div>
+          </div>
+		  
+		 <div class="col-md-1 mt-4 mt-md-0">
+		 </div>
+		 
+		 <div class="col-md-1 mt-4 mt-md-0">
+		 </div>
+
+          <div class="col-md-5 mt-4 mt-md-0 portfolio-item" onMouseOver ="changeView(3)" onMouseOut = "returnView(3)">
+            <div class="portfolio-wrap">
+              <img src="assets/img/S__172195845.jpg" class="img-fluid" alt="">
+			  <div class="icon-box">
+              <i class="bi bi-bar-chart" style ="position:absolute;top: 50%;transform: translateY(-50%);float: left;color: #d9232d;font-size: 40px;left:5%" id = "itag_3"></i>
+			  <div style ="width: 100%;text-align: center;" id = "divtag_3">
+			  <h4 style="color: white;font-weight: bold;font-size: 200%;position:absolute;top: 50%;transform: translateY(-50%);left: 30%;">嚴密的品質管制:</h4>
+			  </div>
+			  </div>
+			  </img>
+              <div class="portfolio-info" onclick="location.href='portfolio-details.html'">
+                <h4 style = "margin: auto;font-size: 200%;">嚴密的品質管制:<p style = "font-size: 60%;">專業的品保工程師會依據客戶的需求制定相對應之檢驗標準，廠內備有各式檢測儀器，從熔融指數試驗機到色差計；針對客戶需求，我們也可以協助開發自動化檢驗設備。</p></h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-5 mt-4 mt-md-0 portfolio-item" onMouseOver ="changeView(4)" onMouseOut = "returnView(4)">
+            <div class="portfolio-wrap">
+              <img src="assets/img/S__172195845.jpg" class="img-fluid" alt="">
+			  <div class="icon-box">
+              <i class="bi bi-binoculars" style ="position:absolute;top: 50%;transform: translateY(-50%);float: left;color: #d9232d;font-size: 40px;left:5%" id = "itag_4"></i>
+			  <div style ="width: 100%;text-align: center;" id = "divtag_4">
+			  <h4 style="color: white;font-weight: bold;font-size: 200%;position:absolute;top: 50%;transform: translateY(-50%);left: 30%;">No14.文字文字文字文字</h4>
+			  </div>
+			  </div>
+			  </img>
+              <div class="portfolio-info" onclick="location.href='portfolio-details.html'">
+                <h4 style = "margin: auto;font-size: 200%;">No14.文字文字文字文字<p style = "font-size: 60%;">No15.文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字文字</p></h4>
+              </div>
+            </div>
+          </div>
+		  
+		  <div class="col-md-1 mt-4 mt-md-0">
+		 </div>
+		</div>
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
 
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
@@ -327,12 +414,12 @@ body{font-family:微軟正黑體!important;}
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
+              <div class="portfolio-info" onclick="location.href='portfolio-details.html'">
                 <h4>Web 3</h4>
                 <p>Web</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+					<h4>測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試</h4>
+					<p>測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試</p>
                 </div>
               </div>
             </div>
@@ -511,18 +598,7 @@ body{font-family:微軟正黑體!important;}
       </div>
     </div>
 
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Sailor</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/sailor-free-bootstrap-theme/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
+
   </footer><!-- End Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
@@ -618,10 +694,12 @@ body{font-family:微軟正黑體!important;}
       <style>iframe{width: 99vw; height: 99vh;pointer-events: none; }</style>
 	  <script>
 	  function changeView(data){
-	  console.log("123");
+	  $("#itag_"+data).hide();
+	  $("#divtag_"+data).hide();
 	  }
 	  function returnView(data){
-	  console.log("456");
+	  $("#itag_"+data).show();
+	  $("#divtag_"+data).show();
 	  }
 	  </script>
 
