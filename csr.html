@@ -102,7 +102,7 @@
 	 <div class="container">
 	 <div class="row">
 	  <div class="col-lg-12">
-	  <img src="assets/img/sustainability.jpeg" class="img-fluid" alt="">
+	  <img src="assets/img/sustainability.png" class="img-fluid" alt="">
 	  </div>
 	  </div>
 	  </div>
@@ -125,7 +125,7 @@
 			<br>
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0" style ="margin-top:-5rem";>
-			<img src="assets/img/CSR1.jpeg" class="img-fluid" alt="">
+			<img src="assets/img/CSR1.png" class="img-fluid" alt="">
           </div>
         </div>
 
@@ -157,7 +157,7 @@
           </div>
 		  
 		  <div class="col-lg-6" style = "margin-top:-5rem">
-				 <img src="assets/img/CSR2.jpeg" class="img-fluid" alt="">
+				 <img src="assets/img/CSR2.png" class="img-fluid" alt="">
           </div>
 		  </div>
 
@@ -252,6 +252,33 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  
+                  <!-- Messenger 洽談外掛程式 Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your 洽談外掛程式 code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "1772812179628195");
+      chatbox.setAttribute("attribution", "biz_inbox");
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v11.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/zh_TW/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
 
 </body>
 
