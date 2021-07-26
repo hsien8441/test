@@ -99,7 +99,7 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>服務項目</h2>
+          <h2 style = "font-weight: 700">服務項目</h2>
           <ol>
             <li><a href="index.html">首頁</a></li>
             <li>服務項目</li>
@@ -406,16 +406,18 @@
       }(document, 'script', 'facebook-jssdk'));
     </script>
 	
-		  <script>
-		  var originStr ;
+	  <script>
+	  var originStr ;
 	  function changeView(data){
 	  $("#td"+data+"-1").css("background-color", "#B4B4B4");
 	  $("#td"+data+"-2").css("background-color", "#B4B4B4");
 	  $("#td"+data+"-2 h3").css("color", "white");
+	  originStr = $("#td"+data+"-2 h3").html();
+	  $("#td"+data+"-2 h3").html("");
 	  var str1 ;
 	  switch (data) {
 	  case 1 :
-	  str1 = "A.模具設計(包含開模前分析報告,模具設計、模流分析、<br>原料建議及後製程評估⋯·<br>B.模具製造(包含修模/設計變更)<br>C.成品製造。";
+	  str1 = "A.模具設計(包含開模前分析報告,模具設計、模流分析、原料建議及後製程評估⋯·<br>B.模具製造(包含修模/設計變更)<br>C.成品製造。";
 	  break;
 	  
 	  case 2 :
@@ -427,7 +429,7 @@
 	  break;
 	  
 	  case 4 :
-	  str1 = "A.網印<br>B.移印<br>C. 噴湊<br>D.電鍍<br>E.雷雕<br>F.燙金";
+	  str1 = "A.網印<br>B.移印<br>C.噴湊<br>D.電鍍<br>E.雷雕<br>F.燙金";
 	  break;
 	  
 	  case 5 :
@@ -443,6 +445,7 @@
 	  $("#td"+data+"-2").css("background-color", "white");
 	  $("#td"+data+"-2 h3").css("color", "black");
 	  $("#td"+data+"-2 h4").html("");
+	  $("#td"+data+"-2 h3").html(originStr);
 	  }
 	  </script>
 
