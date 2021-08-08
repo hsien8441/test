@@ -34,7 +34,7 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
- 
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 
 <body>
@@ -49,7 +49,7 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html" class="active">首頁</a></li>
+          <li><a href="index.html">首頁</a></li>
 
           <li class="dropdown"><a href="about.html"><span>關於立名</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -70,7 +70,13 @@
           </li>
           <!-- <li><a href="about.html">關於立名</a></li> -->
           <li><a href="services.html">服務項目</a></li>
-          <li><a href="portfolio.html">工作環境</a></li>
+          <li class="dropdown"><a href="environment.html" class="active"><span>工作環境</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+			  <li><a href="environment.html">工作環境</a></li>
+              <li><a href="equipment1.html">新北五股一廠</a></li>
+              <li><a href="equipment2.html">新北五股二廠</a></li>
+			</ul>
+		  </li>
           <li><a href="product.html">產品介紹</a></li>
           <!-- <li><a href="blog.html">Blog</a></li> -->
 
@@ -93,51 +99,60 @@
           <h2 style = "font-weight: 700">工作環境</h2>
           <ol>
             <li><a href="index.html">首頁</a></li>
-            <li>工作環境</li>
+            <li>新北五股二廠</li>
           </ol>
         </div>
 
       </div>
     </section><!-- End Breadcrumbs -->
 
-    <!-- ======= Pricing Section ======= -->
-    <section id="pricing" class="pricing portfolio">
+    <!-- =======  Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
       <div class="container">
 	
 		<div class="section-title">
-          <h2>ENVIRONMEN</h2>
-          <p>工作環境</p>
+          <h2>ENVIRONMENT OF PLANT 1</h2>
+          <p>新北五股二廠-設備</p>
         </div>
 		
-        <div class="row content portfolio-container">
-          <div class="col-lg-6 portfolio-item">
-		  <div class="portfolio-wrap">
-			<img src="assets/img/service1.jpg" class="img-fluid" alt="">
-			<div class="portfolio-info" style = "justify-content: center;">
-                <h4>測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試</h4>
-                <p>測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper-container">
+              <div class="swiper-wrapper align-items-center" id ="carouselDiv">
+
+                <div class="swiper-slide" id ="carousel1">
+                  <img src="assets/img/portfolio/portfolio-details-1.jpg" alt="">
                 </div>
-              </div>
-			  </div>
-			  <h4 style = "text-align: center;color:black;">新北五股一廠</h4>
-          </div>
-          <div class="col-lg-6 portfolio-item">
-		  <div class="portfolio-wrap">
-			<img src="assets/img/service1.jpg" class="img-fluid" alt="">
-			<div class="portfolio-info" style = "justify-content: center;">
-                <h4>測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試</h4>
-                <p>測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+
+                <div class="swiper-slide" id ="carousel2">
+                  <img src="assets/img/portfolio/portfolio-details-2.jpg" alt="">
                 </div>
+
+                <div class="swiper-slide" id ="carousel3">
+                  <img src="assets/img/portfolio/portfolio-details-3.jpg" alt="">
+                </div>
+
               </div>
-			  </div>
-			  <h4 style = "text-align: center;color:black;">新北五股二廠</h4>
+              <div class="swiper-pagination"></div>
+            </div>
           </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h2>模具製造設備</h2>
+              <ul style = "font-size: 1.5rem;">
+                <li id="changeLi1"><strong>設備名稱</strong>: Web design</li><br>
+                <li id="changeLi2"><strong>數量</strong>: ASU Company</li><br>
+                <li id="changeLi3"><strong>廠牌</strong>: 01 March, 2020</li><br>
+                <li id="changeLi4"><strong>備註</strong>: <a href="#">www.example.com</a></li>
+              </ul>
+            </div>
+            <div class="portfolio-description" style = "display: flex;justify-content: center;align-items: center;"> 
+              <a href="javascript:history.back()" class="getstarted" style="padding: 8px 35px;;border-radius: 8px;font-weight: 400;color: #fff;background: #789dc3;font-size: 2rem;">回上頁</a>
+            </div>
+          </div>
+
         </div>
 
 
@@ -258,6 +273,41 @@
         js.src = 'https://connect.facebook.net/zh_TW/sdk/xfbml.customerchat.js';
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
+	  
+	var element = document.getElementById("carouselDiv");
+	element.addEventListener("transitionend", showMessage, false);
+
+	function showMessage(){
+	console.log(element.getElementsByClassName("swiper-slide swiper-slide-active")[0].id);
+	var str1 = "<strong>設備名稱</strong>:"; 
+	var str2 = "<strong>數量</strong>:";
+	var str3 = "<strong>廠牌</strong>:";
+	var str4 = "<strong>備註</strong>:";
+	switch(element.getElementsByClassName("swiper-slide swiper-slide-active")[0].id){
+	case 'carousel1':
+		str1 += "test11"; 
+		str2 += "test12"; 
+		str3 += "test13"; 
+		str4 += "test14"; 
+	break;
+	case 'carousel2':
+		str1 += "test21"; 
+		str2 += "test22"; 
+		str3 += "test23"; 
+		str4 += "test24"; 
+	break;
+	case 'carousel3':
+		str1 += "test31"; 
+		str2 += "test32"; 
+		str3 += "test33"; 
+		str4 += "test34"; 
+	break;
+	}
+	$("#changeLi1").html(str1);
+	$("#changeLi2").html(str2);
+	$("#changeLi3").html(str3);
+	$("#changeLi4").html(str4);
+	}
     </script>
 
 </body>
