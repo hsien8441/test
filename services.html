@@ -255,7 +255,7 @@
 			<td>
 			</td>
 			<td style="border-top:3px #568589 solid; border-left:3px #568589 solid;border-bottom:3px #568589 solid;border-top-left-radius: 10px;border-bottom-left-radius: 10px;width:16.66666666666667%;" cellpadding="10" border='1'onMouseOver ="changeView(6)" onMouseOut = "returnView(6)" id = "td6-1"> 
-				<img src="assets/img/icon 5.png" class="img-fluid" alt="">
+				<img src="assets/img/icon 6.png" class="img-fluid" alt="">
 				<!-- <h5 style = "text-align: center;color: #568589;font-weight:bold;">自動化開發</h5> -->
 			</td>
 			<td style="border-top:3px #568589 solid; border-right:3px #568589 solid;border-bottom:3px #568589 solid;border-top-right-radius: 10px;border-bottom-right-radius: 10px;width:33.33333333333333%;" cellpadding="10" border='1'onMouseOver ="changeView(6)" onMouseOut = "returnView(6)" id = "td6-2">
@@ -316,9 +316,13 @@
         </div>
 
         <div class="row">
-		 <div class="col-lg-12">
+		<div class="col-lg-1">
+		</div>
+		 <div class="col-lg-10">
 			<img src="assets/img/quality_control.jpeg" class="img-fluid" alt="" style = "display: block;margin-left: auto;margin-right: auto;">
 		 </div>
+		 <div class="col-lg-1">
+		</div>
 		  </div>
 
       </div>
@@ -443,8 +447,8 @@
 	  <script>
 	  var originStr ;
 	  function changeView(data){
-	  $("#td"+data+"-1").css("background-color", "#B4B4B4");
-	  $("#td"+data+"-2").css("background-color", "#B4B4B4");
+	  $("#td"+data+"-1").css("background-color", "#848484");
+	  $("#td"+data+"-2").css("background-color", "#848484");
 	  $("#td"+data+"-2 h3").css("color", "white");
 	  originStr = $("#td"+data+"-2 h3").html();
 	  $("#td"+data+"-2 h3").html("");
@@ -464,7 +468,7 @@
 	  break;
 	  
 	  case 4 :
-	  str1 = "A.入料檢<br>B.製程檢驗<br>C.半成品檢驗<br>D.產品最終檢驗<br>E.&thinsp;出貨檢驗"
+	  str1 = "A.入料檢驗<br>B.製程檢驗<br>C.半成品檢驗<br>D.產品最終檢驗<br>E.&thinsp;出貨檢驗"
 	  <!-- str1 = "A.網印<br>B.移印<br>C.噴湊<br>D.電鍍<br>E.&thinsp;雷雕<br>F.&thinsp;燙金"; -->
 	  break;
 	  
@@ -473,7 +477,7 @@
 	  break;
 	  
 	  case 6 :
-	  str1 = "A.將成品視需求進行出貨(可配合出外<br>&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;國)。";
+	  str1 = "A.將成品視需求進行出貨<br>&thinsp;&thinsp;&thinsp;&thinsp;&thinsp;(可配合出外國)。";
 	  break;
 	  }
 	  $("#td"+data+"-2 h4").html(str1);
