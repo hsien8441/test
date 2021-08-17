@@ -140,6 +140,7 @@
   /**
    * Portfolio details slider
    */
+   //新增
   new Swiper('.portfolio-details-slider', {
     speed: 400,
     loop: true,
@@ -151,7 +152,11 @@
       el: '.swiper-pagination',
       type: 'bullets',
       clickable: true
-    }
+    },
+	navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
   });
 
   /**
