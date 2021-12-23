@@ -127,29 +127,29 @@ background:black;
 
           <div class="col-lg-8">
             <div class="portfolio-details-slider swiper-container">
-              <div class="swiper-wrapper align-items-center" id ="carouselDiv">
+              <div class="swiper-wrapper align-items-center" id ="carouselDiv1">
 
-                <div class="swiper-slide" id ="carousel1">
+                <div class="swiper-slide" id ="carousel1-1">
                   <img src="assets/img/portfolio/portfolio-details-1.jpg" alt="">
                 </div>
 
-                <div class="swiper-slide" id ="carousel2">
+                <div class="swiper-slide" id ="carousel1-2">
                   <img src="assets/img/portfolio/portfolio-details-2.jpg" alt="">
                 </div>
 
-                <div class="swiper-slide" id ="carousel3">
+                <div class="swiper-slide" id ="carousel1-3">
                   <img src="assets/img/portfolio/portfolio-details-3.jpg" alt="">
                 </div>
 				
-				<div class="swiper-slide" id ="carousel4">
+				<div class="swiper-slide" id ="carousel1-4">
                   <img src="assets/img/portfolio/portfolio-7.jpg" alt="">
                 </div>
 				
-				<div class="swiper-slide" id ="carousel5">
+				<div class="swiper-slide" id ="carousel1-5">
                   <img src="assets/img/portfolio/portfolio-8.jpg" alt="">
                 </div>
 				
-				<div class="swiper-slide" id ="carousel6">
+				<div class="swiper-slide" id ="carousel1-6">
                   <img src="assets/img/portfolio/portfolio-9.jpg" alt="">
                 </div>
 
@@ -166,10 +166,10 @@ background:black;
             <div class="portfolio-info">
               <h2>模具製造設備</h2>
               <ul style = "font-size: 1.5rem;">
-                <li id="changeLi1"><strong>設備名稱</strong>:test11</li><br>
-                <li id="changeLi2"><strong>數量</strong>:test12</li><br>
-                <li id="changeLi3"><strong>廠牌</strong>:test13</li><br>
-                <li id="changeLi4"><strong>介紹</strong>:test14</li>
+                <li id="changeLi1-1"><strong>設備名稱</strong>:test11</li><br>
+                <li id="changeLi1-2"><strong>數量</strong>:test12</li><br>
+                <li id="changeLi1-3"><strong>廠牌</strong>:test13</li><br>
+                <li id="changeLi1-4"><strong>介紹</strong>:test14</li>
               </ul>
             </div>
            <!--  <div class="portfolio-description" style = "display: flex;justify-content: center;align-items: center;"> 
@@ -183,29 +183,29 @@ background:black;
 
           <div class="col-lg-8">
             <div class="portfolio-details-slider swiper-container">
-              <div class="swiper-wrapper align-items-center" id ="carouselDiv">
+              <div class="swiper-wrapper align-items-center" id ="carouselDiv2">
 
-                <div class="swiper-slide" id ="carousel1">
+                <div class="swiper-slide" id ="carousel2-1">
                   <img src="assets/img/portfolio/portfolio-details-1.jpg" alt="">
                 </div>
 
-                <div class="swiper-slide" id ="carousel2">
+                <div class="swiper-slide" id ="carousel2-2">
                   <img src="assets/img/portfolio/portfolio-details-2.jpg" alt="">
                 </div>
 
-                <div class="swiper-slide" id ="carousel3">
+                <div class="swiper-slide" id ="carousel2-3">
                   <img src="assets/img/portfolio/portfolio-details-3.jpg" alt="">
                 </div>
 				
-				<div class="swiper-slide" id ="carousel4">
+				<div class="swiper-slide" id ="carousel2-4">
                   <img src="assets/img/portfolio/portfolio-7.jpg" alt="">
                 </div>
 				
-				<div class="swiper-slide" id ="carousel5">
+				<div class="swiper-slide" id ="carousel2-5">
                   <img src="assets/img/portfolio/portfolio-8.jpg" alt="">
                 </div>
 				
-				<div class="swiper-slide" id ="carousel6">
+				<div class="swiper-slide" id ="carousel2-6">
                   <img src="assets/img/portfolio/portfolio-9.jpg" alt="">
                 </div>
 
@@ -222,10 +222,10 @@ background:black;
             <div class="portfolio-info">
               <h2>模具製造設備</h2>
               <ul style = "font-size: 1.5rem;">
-                <li id="changeLi1"><strong>設備名稱</strong>:test11</li><br>
-                <li id="changeLi2"><strong>數量</strong>:test12</li><br>
-                <li id="changeLi3"><strong>廠牌</strong>:test13</li><br>
-                <li id="changeLi4"><strong>介紹</strong>:test14</li>
+                <li id="changeLi2-1"><strong>設備名稱</strong>:test11</li><br>
+                <li id="changeLi2-2"><strong>數量</strong>:test12</li><br>
+                <li id="changeLi2-3"><strong>廠牌</strong>:test13</li><br>
+                <li id="changeLi2-4"><strong>介紹</strong>:test14</li>
               </ul>
             </div>
            <!--  <div class="portfolio-description" style = "display: flex;justify-content: center;align-items: center;"> 
@@ -354,57 +354,114 @@ background:black;
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
 	  
-	var element = document.getElementById("carouselDiv");
-	element.addEventListener("transitionend", showMessage, false);
+	var element1 = document.getElementById("carouselDiv1");
+	element1.addEventListener("transitionend", showMessage1, false);
+	
+	var element2 = document.getElementById("carouselDiv2");
+	element2.addEventListener("transitionend", showMessage2, false);
 
-	function showMessage(){
-	console.log(element.getElementsByClassName("swiper-slide swiper-slide-active")[0].id);
-	var str1 = "<strong>設備名稱</strong>:"; 
-	var str2 = "<strong>數量</strong>:";
-	var str3 = "<strong>廠牌</strong>:";
-	var str4 = "<strong>介紹</strong>:";
-	switch(element.getElementsByClassName("swiper-slide swiper-slide-active")[0].id){
-	case 'carousel1':
+	var str1; 
+	var str2;
+	var str3;
+	var str4;
+
+	function resetStr(){
+	str1 = "<strong>設備名稱</strong>:"; 
+	str2 = "<strong>數量</strong>:";
+	str3 = "<strong>廠牌</strong>:";
+	str4 = "<strong>介紹</strong>:";
+	}
+	
+	function showMessage1(){
+	resetStr();
+	switch(element1.getElementsByClassName("swiper-slide swiper-slide-active")[0].id){
+	case 'carousel1-1':
 		str1 += "test11"; 
 		str2 += "test12"; 
 		str3 += "test13"; 
 		str4 += "test14"; 
 	break;
-	case 'carousel2':
+	case 'carousel1-2':
 		str1 += "test21"; 
 		str2 += "test22"; 
 		str3 += "test23"; 
 		str4 += "test24"; 
 	break;
-	case 'carousel3':
+	case 'carousel1-3':
 		str1 += "test31"; 
 		str2 += "test32"; 
 		str3 += "test33"; 
 		str4 += "test34"; 
 	break;
-	case 'carousel4':
+	case 'carousel1-4':
 		str1 += "test41"; 
 		str2 += "test42"; 
 		str3 += "test43"; 
 		str4 += "test44"; 
 	break;
-	case 'carousel5':
+	case 'carousel1-5':
 		str1 += "test51"; 
 		str2 += "test52"; 
 		str3 += "test53"; 
 		str4 += "test54"; 
 	break;
-	case 'carousel6':
+	case 'carousel1-6':
 		str1 += "test61"; 
 		str2 += "test62"; 
 		str3 += "test63"; 
 		str4 += "test64"; 
 	break;
 	}
-	$("#changeLi1").html(str1);
-	$("#changeLi2").html(str2);
-	$("#changeLi3").html(str3);
-	$("#changeLi4").html(str4);
+	$("#changeLi1-1").html(str1);
+	$("#changeLi1-2").html(str2);
+	$("#changeLi1-3").html(str3);
+	$("#changeLi1-4").html(str4);
+	}
+	
+	function showMessage2(){
+	resetStr();
+	switch(element2.getElementsByClassName("swiper-slide swiper-slide-active")[0].id){
+	case 'carousel2-1':
+		str1 += "test11"; 
+		str2 += "test12"; 
+		str3 += "test13"; 
+		str4 += "test14"; 
+	break;
+	case 'carousel2-2':
+		str1 += "test21"; 
+		str2 += "test22"; 
+		str3 += "test23"; 
+		str4 += "test24"; 
+	break;
+	case 'carousel2-3':
+		str1 += "test31"; 
+		str2 += "test32"; 
+		str3 += "test33"; 
+		str4 += "test34"; 
+	break;
+	case 'carousel2-4':
+		str1 += "test41"; 
+		str2 += "test42"; 
+		str3 += "test43"; 
+		str4 += "test44"; 
+	break;
+	case 'carousel2-5':
+		str1 += "test51"; 
+		str2 += "test52"; 
+		str3 += "test53"; 
+		str4 += "test54"; 
+	break;
+	case 'carousel2-6':
+		str1 += "test61"; 
+		str2 += "test62"; 
+		str3 += "test63"; 
+		str4 += "test64"; 
+	break;
+	}
+	$("#changeLi2-1").html(str1);
+	$("#changeLi2-2").html(str2);
+	$("#changeLi2-3").html(str3);
+	$("#changeLi2-4").html(str4);
 	}
     </script>
 </body>
