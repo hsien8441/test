@@ -43,6 +43,13 @@ width:20px;
 height:20px;
 background:black;
 }
+
+.imgSet{
+height: 569px;
+width: auto;
+display: block;
+margin: auto;
+}
 </style>
 
 <body>
@@ -78,11 +85,23 @@ background:black;
           </li>
           <!-- <li><a href="about.html">關於立名</a></li> -->
           <li><a href="services.html">服務項目</a></li>
-          <li class="dropdown"><a href="environment.html" class="active"><span>工作環境</span> <i class="bi bi-chevron-down"></i></a>
+		   <li class="dropdown"><a href="environment1.html"  class="active"><span>工作環境</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-			  <li><a href="environment.html">工作環境</a></li>
+			<li  class = "dropdown dropdown-submenu open">
+			<a href="equipment1.html">工作環境<p style = "margin-top: 0;margin-bottom: 0rem;">></p></a>
+			  <ul class ="dropdown-menu">
+              <li><a href="environment1.html">新北五股一廠</a></li>
+              <li><a href="environment2.html">新北五股二廠</a></li>
+			  </ul>
+			</li>
+			  <li class = "dropdown dropdown-submenu open">
+			  <a href="equipment1.html">工廠設備<p style = "margin-top: 0;margin-bottom: 0rem;">></p></a>
+			  <ul class ="dropdown-menu">
               <li><a href="equipment1.html">新北五股一廠</a></li>
               <li><a href="equipment2.html">新北五股二廠</a></li>
+			  </ul>
+			  </li>
+			  
 			</ul>
 		  </li>
           <li><a href="product.html">產品介紹</a></li>
@@ -119,7 +138,7 @@ background:black;
       <div class="container">
 	
 		<div class="section-title">
-          <h2>ENVIRONMENT OF PLANT 1</h2>
+          <h2>EQUIPMENTS OF PLANT 1</h2>
           <p>新北五股一廠-設備</p>
         </div>
 		
@@ -130,29 +149,25 @@ background:black;
               <div class="swiper-wrapper align-items-center" id ="carouselDiv1">
 
                 <div class="swiper-slide" id ="carousel1-1">
-                  <img src="assets/img/portfolio/portfolio-details-1.jpg" alt="">
+                  <img src="assets/img/factory/設備照/一廠/模具設備/CAE模流分析.jpg" alt="" class="imgSet">
                 </div>
 
                 <div class="swiper-slide" id ="carousel1-2">
-                  <img src="assets/img/portfolio/portfolio-details-2.jpg" alt="">
+                  <img src="assets/img/factory/設備照/一廠/模具設備/車床.jpg" alt="" class="imgSet">
                 </div>
 
                 <div class="swiper-slide" id ="carousel1-3">
-                  <img src="assets/img/portfolio/portfolio-details-3.jpg" alt="">
+                  <img src="assets/img/factory/設備照/一廠/模具設備/放電機2.jpg" alt="" class="imgSet">
                 </div>
 				
 				<div class="swiper-slide" id ="carousel1-4">
-                  <img src="assets/img/portfolio/portfolio-7.jpg" alt="">
+                  <img src="assets/img/factory/設備照/一廠/模具設備/洗床.jpg" alt="" class="imgSet">
                 </div>
 				
 				<div class="swiper-slide" id ="carousel1-5">
-                  <img src="assets/img/portfolio/portfolio-8.jpg" alt="">
+                  <img src="assets/img/factory/設備照/一廠/模具設備/磨床.jpg" alt="" class="imgSet">
                 </div>
 				
-				<div class="swiper-slide" id ="carousel1-6">
-                  <img src="assets/img/portfolio/portfolio-9.jpg" alt="">
-                </div>
-
               </div>
 			 <!--  <div class="toleft"> < </div>
                 <div class="toright"> > </div> -->
@@ -179,34 +194,26 @@ background:black;
 
         </div>
 		
-		        <div class="row gy-4">
+		<div class="row gy-4">
 
           <div class="col-lg-8">
             <div class="portfolio-details-slider swiper-container">
               <div class="swiper-wrapper align-items-center" id ="carouselDiv2">
 
                 <div class="swiper-slide" id ="carousel2-1">
-                  <img src="assets/img/portfolio/portfolio-details-1.jpg" alt="">
+                  <img src="assets/img/factory/設備照/一廠/成型設備/冷水機.jpg" alt="" class="imgSet">
                 </div>
 
                 <div class="swiper-slide" id ="carousel2-2">
-                  <img src="assets/img/portfolio/portfolio-details-2.jpg" alt="">
+                  <img src="assets/img/factory/設備照/一廠/成型設備/除濕乾燥機.jpg" alt="" class="imgSet">
                 </div>
 
                 <div class="swiper-slide" id ="carousel2-3">
-                  <img src="assets/img/portfolio/portfolio-details-3.jpg" alt="">
+                  <img src="assets/img/factory/設備照/一廠/成型設備/模溫機.jpg" alt="" class="imgSet">
                 </div>
 				
 				<div class="swiper-slide" id ="carousel2-4">
-                  <img src="assets/img/portfolio/portfolio-7.jpg" alt="">
-                </div>
-				
-				<div class="swiper-slide" id ="carousel2-5">
-                  <img src="assets/img/portfolio/portfolio-8.jpg" alt="">
-                </div>
-				
-				<div class="swiper-slide" id ="carousel2-6">
-                  <img src="assets/img/portfolio/portfolio-9.jpg" alt="">
+                  <img src="assets/img/factory/設備照/一廠/成型設備/熱膠道設備.jpg" alt="" class="imgSet">
                 </div>
 
               </div>
@@ -220,7 +227,7 @@ background:black;
 
           <div class="col-lg-4">
             <div class="portfolio-info">
-              <h2>模具製造設備</h2>
+              <h2>成型設備</h2>
               <ul style = "font-size: 1.5rem;">
                 <li id="changeLi2-1"><strong>設備名稱</strong>:test11</li><br>
                 <li id="changeLi2-2"><strong>數量</strong>:test12</li><br>
@@ -228,11 +235,98 @@ background:black;
                 <li id="changeLi2-4"><strong>介紹</strong>:test14</li>
               </ul>
             </div>
-           <!--  <div class="portfolio-description" style = "display: flex;justify-content: center;align-items: center;"> 
-              <a href="javascript:history.back()" class="getstarted" style="padding: 8px 35px;;border-radius: 8px;font-weight: 400;color: #fff;background: #789dc3;font-size: 2rem;">回上頁</a>
-            </div> -->
+          </div>
+        </div>
+		
+		<div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper-container">
+              <div class="swiper-wrapper align-items-center" id ="carouselDiv3">
+
+                <div class="swiper-slide" id ="carousel3-1">
+                  <img src="assets/img/factory/設備照/一廠/自動化設備/泛用埋入機.jpg" alt="" class="imgSet">
+                </div>
+
+                <div class="swiper-slide" id ="carousel3-2">
+                  <img src="assets/img/factory/設備照/一廠/自動化設備/專用埋入機.jpg" alt="" class="imgSet">
+                </div>
+
+              </div>
+			 <!--  <div class="toleft"> < </div>
+                <div class="toright"> > </div> -->
+              <div class="swiper-pagination"></div>
+			  <div class="swiper-button-prev" slot="button-prev"></div>
+                <div class="swiper-button-next" slot="button-next"></div>
+            </div>
           </div>
 
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h2>自動化設備</h2>
+              <ul style = "font-size: 1.5rem;">
+                <li id="changeLi3-1"><strong>設備名稱</strong>:test11</li><br>
+                <li id="changeLi3-2"><strong>數量</strong>:test12</li><br>
+                <li id="changeLi3-3"><strong>廠牌</strong>:test13</li><br>
+                <li id="changeLi3-4"><strong>介紹</strong>:test14</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+		
+		<div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper-container">
+              <div class="swiper-wrapper align-items-center" id ="carouselDiv4">
+
+                <div class="swiper-slide" id ="carousel4-1">
+                  <img src="assets/img/factory/設備照/一廠/品保設備/品保_3d掃描分析儀.jpg" alt="" class="imgSet">
+                </div>
+
+                <div class="swiper-slide" id ="carousel4-2">
+                  <img src="assets/img/factory/設備照/一廠/品保設備/品保_mi機.jpg" alt="" class="imgSet">
+                </div>
+
+                <div class="swiper-slide" id ="carousel4-3">
+                  <img src="assets/img/factory/設備照/一廠/品保設備/品保_pin規.jpg" alt="" class="imgSet">
+                </div>
+				
+				<div class="swiper-slide" id ="carousel4-4">
+                  <img src="assets/img/factory/設備照/一廠/品保設備/品保_色差機.jpg" alt="" class="imgSet">
+                </div>
+				
+				<div class="swiper-slide" id ="carousel4-5">
+                  <img src="assets/img/factory/設備照/一廠/品保設備/品保_高度規.jpg" alt="" class="imgSet">
+                </div>
+				
+				<div class="swiper-slide" id ="carousel4-6">
+                  <img src="assets/img/factory/設備照/一廠/品保設備/品保_推拉力機.jpg" alt="" class="imgSet">
+                </div>
+
+				<div class="swiper-slide" id ="carousel4-7">
+                  <img src="assets/img/factory/設備照/一廠/品保設備/游標卡尺.jpg" alt="" class="imgSet">
+                </div>
+              </div>
+			 <!--  <div class="toleft"> < </div>
+                <div class="toright"> > </div> -->
+              <div class="swiper-pagination"></div>
+			  <div class="swiper-button-prev" slot="button-prev"></div>
+                <div class="swiper-button-next" slot="button-next"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h2>成型設備</h2>
+              <ul style = "font-size: 1.5rem;">
+                <li id="changeLi4-1"><strong>設備名稱</strong>:test11</li><br>
+                <li id="changeLi4-2"><strong>數量</strong>:test12</li><br>
+                <li id="changeLi4-3"><strong>廠牌</strong>:test13</li><br>
+                <li id="changeLi4-4"><strong>介紹</strong>:test14</li>
+              </ul>
+            </div>
+          </div>
         </div>
 
 
@@ -359,6 +453,12 @@ background:black;
 	
 	var element2 = document.getElementById("carouselDiv2");
 	element2.addEventListener("transitionend", showMessage2, false);
+	
+	var element3 = document.getElementById("carouselDiv3");
+	element3.addEventListener("transitionend", showMessage3, false);
+	
+	var element4 = document.getElementById("carouselDiv4");
+	element4.addEventListener("transitionend", showMessage4, false);
 
 	var str1; 
 	var str2;
@@ -405,12 +505,6 @@ background:black;
 		str3 += "test53"; 
 		str4 += "test54"; 
 	break;
-	case 'carousel1-6':
-		str1 += "test61"; 
-		str2 += "test62"; 
-		str3 += "test63"; 
-		str4 += "test64"; 
-	break;
 	}
 	$("#changeLi1-1").html(str1);
 	$("#changeLi1-2").html(str2);
@@ -445,23 +539,88 @@ background:black;
 		str3 += "test43"; 
 		str4 += "test44"; 
 	break;
-	case 'carousel2-5':
-		str1 += "test51"; 
-		str2 += "test52"; 
-		str3 += "test53"; 
-		str4 += "test54"; 
-	break;
-	case 'carousel2-6':
-		str1 += "test61"; 
-		str2 += "test62"; 
-		str3 += "test63"; 
-		str4 += "test64"; 
-	break;
+
 	}
 	$("#changeLi2-1").html(str1);
 	$("#changeLi2-2").html(str2);
 	$("#changeLi2-3").html(str3);
 	$("#changeLi2-4").html(str4);
+	}
+	
+	function showMessage3(){
+	resetStr();
+	switch(element3.getElementsByClassName("swiper-slide swiper-slide-active")[0].id){
+	case 'carousel3-1':
+		str1 += "test11"; 
+		str2 += "test12"; 
+		str3 += "test13"; 
+		str4 += "test14"; 
+	break;
+	case 'carousel3-2':
+		str1 += "test21"; 
+		str2 += "test22"; 
+		str3 += "test23"; 
+		str4 += "test24"; 
+	break;
+
+	}
+	$("#changeLi3-1").html(str1);
+	$("#changeLi3-2").html(str2);
+	$("#changeLi3-3").html(str3);
+	$("#changeLi3-4").html(str4);
+	}
+	
+	function showMessage4(){
+	resetStr();
+	switch(element4.getElementsByClassName("swiper-slide swiper-slide-active")[0].id){
+	case 'carousel4-1':
+		str1 += "test11"; 
+		str2 += "test12"; 
+		str3 += "test13"; 
+		str4 += "test14"; 
+	break;
+	case 'carousel4-2':
+		str1 += "test21"; 
+		str2 += "test22"; 
+		str3 += "test23"; 
+		str4 += "test24"; 
+	break;
+	case 'carousel4-3':
+		str1 += "test31"; 
+		str2 += "test32"; 
+		str3 += "test33"; 
+		str4 += "test34"; 
+	break;
+	case 'carousel4-4':
+		str1 += "test41"; 
+		str2 += "test42"; 
+		str3 += "test43"; 
+		str4 += "test44"; 
+	break;
+	case 'carousel4-5':
+		str1 += "test51"; 
+		str2 += "test52"; 
+		str3 += "test53"; 
+		str4 += "test54"; 
+	break;
+	case 'carousel4-6':
+		str1 += "test61"; 
+		str2 += "test62"; 
+		str3 += "test63"; 
+		str4 += "test64"; 
+	break;
+	case 'carousel4-7':
+		str1 += "test71"; 
+		str2 += "test72"; 
+		str3 += "test73"; 
+		str4 += "test74"; 
+	break;
+
+	}
+	$("#changeLi4-1").html(str1);
+	$("#changeLi4-2").html(str2);
+	$("#changeLi4-3").html(str3);
+	$("#changeLi4-4").html(str4);
 	}
     </script>
 </body>
