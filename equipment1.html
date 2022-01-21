@@ -45,7 +45,7 @@ background:black;
 }
 
 .imgSet{
-height: 569px;
+
 width: auto;
 display: block;
 margin: auto;
@@ -255,8 +255,12 @@ margin: auto;
                 <div class="swiper-slide" id ="carousel3-1">
                   <img src="assets/img/factory/設備照/一廠/自動化設備/泛用埋入機.jpg" alt="" class="imgSet">
                 </div>
+				
+				<div class="swiper-slide" id ="carousel3-2">
+                  <img src="assets/img/factory/設備照/一廠/自動化設備/自動化泛用埋入機.jpg" alt="" class="imgSet">
+                </div>
 
-                <div class="swiper-slide" id ="carousel3-2">
+                <div class="swiper-slide" id ="carousel3-3">
                   <img src="assets/img/factory/設備照/一廠/自動化設備/專用埋入機.jpg" alt="" class="imgSet">
                 </div>
 
@@ -330,7 +334,7 @@ margin: auto;
 
           <div class="col-lg-4">
             <div class="portfolio-info">
-              <h2>成型設備</h2>
+              <h2>品質檢驗設備</h2>
               <ul style = "font-size: 1.5rem;">
                 <li id="changeLi4-1"><strong>設備名稱</strong>:3D逆向掃描儀</li><br>
                 <li id="changeLi4-2"><strong>數量</strong>:1臺</li><br>
@@ -497,7 +501,7 @@ margin: auto;
 		str1 += "臥室車床"; 
 		str2 += "1臺"; 
 		str3 += " "; 
-		str4 += "加工機床,工件中心軸旋轉, 刀具進給進行加工。"; 
+		str4 += "加工機床,工件中心軸旋轉, 刀具進給進行切削加工。"; 
 	break;
 	case 'carousel1-3':
 		str1 += "立式銑床"; 
@@ -509,13 +513,13 @@ margin: auto;
 		str1 += "平面磨床"; 
 		str2 += "3臺"; 
 		str3 += " "; 
-		str4 += "馬達帶動沙輪、紙進行研磨加工, 加工精度高、但效率差。"; 
+		str4 += "馬達帶動沙輪、紙進行研磨加工, 加工精度高。"; 
 	break;
 		case 'carousel1-5':
 		str1 += "放電加工機"; 
 		str2 += "8臺"; 
 		str3 += " "; 
-		str4 += "電極接近工件, 利用電流產生之高溫融蝕工件, 進行加工。"; 
+		str4 += "放電加工機是一種利用電火花放電，對金屬表面進行電蝕的原理來加工金屬零件的工具機設備。"; 
 	break;
 	}
 	$("#changeLi1-1").html(str1);
@@ -543,7 +547,7 @@ margin: auto;
 		str1 += "模溫機"; 
 		str2 += "每臺射出機配備一臺"; 
 		str3 += " "; 
-		str4 += "射出成型製程中, 為滿足外觀等需求,部分模具需使用熱油進行循環控溫, 以達到適當的生產模溫, 此機臺用以控溫與送油。"; 
+		str4 += "射出成型製程中, 為滿足週期等需求,部分模具需使用熱油進行循環控溫, 以達到適當的生產模溫, 此機臺用以控溫與送油。"; 
 	break;
 	case 'carousel2-4':
 		str1 += "熱澆道溫度控制器"; 
@@ -578,13 +582,19 @@ margin: auto;
 		str1 += "泛用鐵件埋入機"; 
 		str2 += "2臺"; 
 		str3 += "自行開發"; 
-		str4 += "我司針對”小型鐵件埋入射出”的產品進行自動化開發, 使用AI視覺辨識系統搭配Toshiba Scara機械手, 與UR協作機械手。不但提高效率、減少失誤, 同時亦兼顧工廠安全。"; 
+		str4 += "針對”小型鐵件埋入射出”的產品進行自動化開發, 使用AI視覺辨識系統搭配Toshiba Scara機械手, 與UR協作機械手。不但提高效率、減少失誤, 同時亦兼顧工廠安全。"; 
 	break;
 	case 'carousel3-2':
+		str1 += "泛用鐵件埋入機"; 
+		str2 += "2臺"; 
+		str3 += "自行開發"; 
+		str4 += "針對”小型鐵件埋入射出”的產品進行自動化開發, 使用AI視覺辨識系統搭配Toshiba Scara機械手, 與UR協作機械手。不但提高效率、減少失誤, 同時亦兼顧工廠安全。"; 
+	break;
+	case 'carousel3-3':
 		str1 += "專用鐵件埋入機"; 
 		str2 += "2臺"; 
 		str3 += "自行開發"; 
-		str4 += "我司針對”小型鐵件埋入射出”的產品進行自動化開發, 使用震動盤搭配FANUC機械手與紅外線光柵安全系統。不但提高效率、減少失誤, 同時亦兼顧工廠安全。"; 
+		str4 += "針對”小型鐵件埋入射出”的產品進行自動化開發, 使用震動盤搭配FANUC機械手與紅外線光柵安全系統。不但提高效率、減少失誤, 同時亦兼顧工廠安全。"; 
 	break;
 
 	}
@@ -619,7 +629,7 @@ margin: auto;
 		str1 += "色差機"; 
 		str2 += "2臺"; 
 		str3 += " "; 
-		str4 += "透過光線的反射對塑膠成品進行顏色分析, 分辨色差數值。"; 
+		str4 += "透過光線的反射對塑膠成品進行顏色分析, 分辨色差之*LAB, LCH數值。"; 
 	break;
 	case 'carousel4-5':
 		str1 += "高度規"; 
@@ -636,8 +646,8 @@ margin: auto;
 	case 'carousel4-7':
 		str1 += "油標卡尺、分釐卡尺、厚薄規"; 
 		str2 += "數套"; 
-		str3 += " "; 
-		str4 += "適合簡易量測。"; 
+		str3 += "MITUTOYO"; 
+		str4 += "適合簡易量測內, 外徑, 深度…"; 
 	break;
 	case 'carousel4-8':
 		str1 += "2.5D投影量測儀"; 
