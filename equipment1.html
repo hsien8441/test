@@ -201,26 +201,30 @@ margin: auto;
               <div class="swiper-wrapper align-items-center" id ="carouselDiv2">
 
 				<div class="swiper-slide" id ="carousel2-1">
+                  <img src="assets/img/factory/設備照/一廠/成型設備/射出設備.jpeg" alt="" class="imgSet">
+                </div>
+				
+				<div class="swiper-slide" id ="carousel2-2">
                   <img src="assets/img/factory/設備照/一廠/成型設備/除濕乾燥機.jpg" alt="" class="imgSet">
                 </div>
 	
-                <div class="swiper-slide" id ="carousel2-2">
+                <div class="swiper-slide" id ="carousel2-3">
                   <img src="assets/img/factory/設備照/一廠/成型設備/冷水機.jpg" alt="" class="imgSet">
                 </div>
 
-                <div class="swiper-slide" id ="carousel2-3">
+                <div class="swiper-slide" id ="carousel2-4">
                   <img src="assets/img/factory/設備照/一廠/成型設備/模溫機.jpg" alt="" class="imgSet">
                 </div>
 				
-				<div class="swiper-slide" id ="carousel2-4">
+				<div class="swiper-slide" id ="carousel2-5">
                   <img src="assets/img/factory/設備照/一廠/成型設備/熱膠道設備.jpg" alt="" class="imgSet">
                 </div>
 				
-				<div class="swiper-slide" id ="carousel2-5">
+				<div class="swiper-slide" id ="carousel2-6">
                   <img src="assets/img/factory/設備照/一廠/成型設備/模內監視器.jpg" alt="" class="imgSet">
                 </div>
 				
-				<div class="swiper-slide" id ="carousel2-6">
+				<div class="swiper-slide" id ="carousel2-7">
                   <img src="assets/img/factory/設備照/一廠/成型設備/機械手.jpg" alt="" class="imgSet">
                 </div>
 
@@ -237,10 +241,10 @@ margin: auto;
             <div class="portfolio-info">
               <h2>成型設備</h2>
               <ul style = "font-size: 1.5rem;">
-                <li id="changeLi2-1"><strong>設備名稱</strong>:真空乾燥除濕機</li><br>
-                <li id="changeLi2-2"><strong>數量</strong>:5臺</li><br>
-                <li id="changeLi2-3"><strong>廠牌</strong>: </li><br>
-                <li id="changeLi2-4"><strong>介紹</strong>:部分原料對水份較敏感(如聚酯類), 其對除濕乾燥的需求較高, 需要使用到除濕效率較好的真空乾燥除濕機。</li>
+                <li id="changeLi2-1"><strong>設備名稱</strong>:射出成型機</li><br>
+                <li id="changeLi2-2"><strong>數量</strong>:26臺</li><br>
+                <li id="changeLi2-3"><strong>廠牌</strong>:樺欽, JSW, Sumitomo, Fanuc…</li><br>
+                <li id="changeLi2-4"><strong>介紹</strong>:立名鋼模一廠備有26臺射出成型機, 從35噸的立式射出機到215噸的雙料射出機應有盡有, 能滿足您各式需求。</li>
               </ul>
             </div>
           </div>
@@ -518,7 +522,7 @@ margin: auto;
 		case 'carousel1-5':
 		str1 += "放電加工機"; 
 		str2 += "8臺"; 
-		str3 += " "; 
+		str3 += "MOLDMASTER…"; 
 		str4 += "放電加工機是一種利用電火花放電，對金屬表面進行電蝕的原理來加工金屬零件的工具機設備。"; 
 	break;
 	}
@@ -532,36 +536,42 @@ margin: auto;
 	resetStr();
 	switch(element2.getElementsByClassName("swiper-slide swiper-slide-active")[0].id){
 	case 'carousel2-1':
-	str1 += "真空乾燥除濕機"; 
-	str2 += "5臺"; 
-	str3 += " "; 
-	str4 += "部分原料對水份較敏感(如聚酯類), 其對除濕乾燥的需求較高, 需要使用到除濕效率較好的真空乾燥除濕機。"; 
+		str1 += "射出成型機"; 
+		str2 += "26臺"; 
+		str3 += "樺欽, JSW, Sumitomo, Fanuc…"; 
+		str4 += "立名鋼模一廠備有26臺射出成型機, 從35噸的立式射出機到215噸的雙料射出機應有盡有, 能滿足您各式需求。"; 
 	break;	
 	case 'carousel2-2':
+		str1 += "真空乾燥除濕機"; 
+		str2 += "5臺"; 
+		str3 += "科基"; 
+		str4 += "部分原料對水份較敏感(如聚酯類), 其對除濕乾燥的需求較高, 需要使用到除濕效率較好的真空乾燥除濕機。"; 
+	break;	
+	case 'carousel2-3':
 		str1 += "冷水機"; 
 		str2 += "3臺"; 
 		str3 += " "; 
-		str4 += "射出成型製程中, 為滿足外觀等需求, 部分模具需使用冷卻水進行循環控溫, 以達到適當的生產模溫, 此機臺用以控溫與送水。"; 
-	break;
-	case 'carousel2-3':
-		str1 += "模溫機"; 
-		str2 += "每臺射出機配備一臺"; 
-		str3 += " "; 
-		str4 += "射出成型製程中, 為滿足週期等需求,部分模具需使用熱油進行循環控溫, 以達到適當的生產模溫, 此機臺用以控溫與送油。"; 
+		str4 += "射出成型製程中, 為滿足週期等需求, 部分模具需使用冷卻水進行循環控溫, 以達到適當的生產模溫, 此機臺用以控溫與送水。"; 
 	break;
 	case 'carousel2-4':
+		str1 += "模溫機"; 
+		str2 += "每臺射出機配備一臺"; 
+		str3 += "JSM"; 
+		str4 += "射出成型製程中, 為滿足外觀等需求,部分模具需使用熱油進行循環控溫, 以達到適當的生產模溫, 此機臺用以控溫與送油。"; 
+	break;
+	case 'carousel2-5':
 		str1 += "熱澆道溫度控制器"; 
 		str2 += "8套"; 
 		str3 += "MOLDMAX"; 
 		str4 += "部分模具需使用熱澆道進行生產已達到節省原料等需求, 此機臺用以監測、控制熱澆道溫度。"; 
 	break;
-	case 'carousel2-5':
+	case 'carousel2-6':
 		str1 += "模內監視器"; 
 		str2 += "每臺射出機配備一臺"; 
-		str3 += " "; 
+		str3 += "MICROMATCH"; 
 		str4 += "為防止模具在生產中因外物進入造成關模時模具受損。"; 
 	break;
-	case 'carousel2-6':
+	case 'carousel2-7':
 		str1 += "三軸伺服機械手"; 
 		str2 += "每臺射出機配備一臺"; 
 		str3 += "HI-MORE"; 
@@ -614,21 +624,21 @@ margin: auto;
 		str4 += "透過3D Scanner掃描搭配逆向3D建模還原CAD檔案, 快速取得數位資料, 方便進行分析與評估。"; 
 	break;
 	case 'carousel4-2':
-		str1 += "融熔指數分析儀(MI機)"; 
+		str1 += "融熔指數分析儀"; 
 		str2 += "1臺"; 
-		str3 += " "; 
+		str3 += "利鑫"; 
 		str4 += "透過融熔指數分析儀來檢驗道廠原料在流動性部分是否符合原廠規格, 以辨別原料品質。"; 
 	break;
 	case 'carousel4-3':
 		str1 += "PIN規"; 
 		str2 += "數套"; 
-		str3 += " "; 
+		str3 += "EISEN"; 
 		str4 += "部分尺寸、位置使用PIN規量測更方便、省時。"; 
 	break;
 	case 'carousel4-4':
 		str1 += "色差機"; 
 		str2 += "2臺"; 
-		str3 += " "; 
+		str3 += "KONICA MINOLTA"; 
 		str4 += "透過光線的反射對塑膠成品進行顏色分析, 分辨色差之*LAB, LCH數值。"; 
 	break;
 	case 'carousel4-5':
@@ -640,7 +650,7 @@ margin: auto;
 	case 'carousel4-6':
 		str1 += "推拉力測試機"; 
 		str2 += "1臺"; 
-		str3 += " "; 
+		str3 += "AIKOH"; 
 		str4 += "檢測工件可承受之最大推拉力負重。"; 
 	break;
 	case 'carousel4-7':
@@ -652,8 +662,8 @@ margin: auto;
 	case 'carousel4-8':
 		str1 += "2.5D投影量測儀"; 
 		str2 += "2臺"; 
-		str3 += " "; 
-		str4 += "利用光學投影進行量測，量測除X、Y軸投影外在機台z軸上也有安裝光學尺,使其能做高度的量測,但只能量測高度,所以又叫做2.5D。"; 
+		str3 += "JMT"; 
+		str4 += "利用光學投影進行量測，量測精度達(3+L/200)um。機臺除X、Y軸投影外在機台z軸上也有安裝光學尺,使其能做高度的量測,但只能量測高度,所以又叫做2.5D。"; 
 	break;
 
 	}
